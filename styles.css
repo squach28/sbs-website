@@ -70,17 +70,50 @@ button {
 }
 
 .hero-image {
+  width: 100%;
+  height: 200px;
   object-fit: cover;
   border-radius: 25px;
 }
 
-.hero-text {
+.hero-text-container {
+  width: 100%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 5%;
+  color: white;
+  opacity: 0.8;
+  user-select: none;
+  text-align: center;
+}
+
+.hero-text-primary {
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
-  opacity: 0.75;
+}
+
+.hero-text-secondary {
+  font-size: 1rem;
+  margin-top: 0.25em;
+  display: none;
+}
+
+@media all and (min-width: 640px) {
+  .hero-image {
+    height: 400px;
+  }
+
+  .hero-text-container {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .hero-text-primary {
+    font-size: 2rem;
+  }
+
+  .hero-text-secondary {
+    display: block;
+    font-size: 1.5rem;
+  }
 }
