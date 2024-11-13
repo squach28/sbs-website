@@ -3,13 +3,6 @@
   padding: 0;
 }
 
-.bg {
-  background: rgba(188, 219, 167, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.9px);
-}
-
 body {
   min-height: 100vh;
   background: rgba(188, 219, 167, 0.2);
@@ -21,9 +14,7 @@ body {
 
 nav > ul {
   display: flex;
-  background: #d55879;
-  backdrop-filter: blur(2.9px);
-  box-shadow: 2px 2px 25px rgb(195, 195, 195);
+  background: rgb(50, 108, 95);
   list-style: none;
   gap: 2rem;
   font-size: 1.5rem;
@@ -47,30 +38,22 @@ button {
   font-size: 1.25rem;
 }
 
-.interested-button {
+.learn-more-button {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   background-color: rgb(126, 201, 183);
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
-.learn-button {
-  background-color: #999999;
-  color: white;
-}
-
-.learn-button:hover {
-  background-color: #5f5f5f;
-  cursor: pointer;
-}
-
-.interested-button:hover {
+.learn-more-button:hover {
   background-color: rgb(80, 172, 150);
   cursor: pointer;
 }
 
 .right-nav {
   display: flex;
-  gap: 2rem;
   margin-left: auto;
 }
 
@@ -78,8 +61,26 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  position: relative;
   font-size: 1rem;
   padding: 1rem;
-  text-align: center;
+}
+
+.hero-image-container {
+  position: relative;
+}
+
+.hero-image {
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  opacity: 0.75;
 }
