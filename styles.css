@@ -21,6 +21,10 @@ nav > ul {
   padding: 1rem;
 }
 
+.right-nav > li > a.nav-bar-link {
+  display: none;
+}
+
 .nav-bar-link {
   color: rgb(235, 235, 235);
   font-weight: bold;
@@ -38,29 +42,12 @@ button {
   font-size: 1.25rem;
 }
 
-.learn-more-button {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  background-color: rgb(126, 201, 183);
-  color: black;
-  font-weight: bold;
-}
-
-.learn-more-button:hover {
-  background-color: rgb(80, 172, 150);
-  cursor: pointer;
-}
-
 .right-nav {
   display: flex;
   margin-left: auto;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   font-size: 1rem;
   padding: 1rem;
 }
@@ -97,7 +84,31 @@ button {
   display: none;
 }
 
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.intro-header {
+  font-size: 1.5rem;
+}
+
 @media all and (min-width: 640px) {
+  .right-nav {
+    gap: 1rem;
+  }
+  .right-nav > li > a.nav-bar-link {
+    display: block;
+  }
+
+  .right-nav > li:last-child {
+    display: none;
+  }
+
   .hero-image {
     height: 400px;
   }
