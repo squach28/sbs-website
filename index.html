@@ -17,14 +17,8 @@
     <link rel="icon" href="assets/icons/sbs_icon.png" />
   </head>
   <body>
-    <ul id="mobile-menu" class="mobile-menu">
-      <li class="mobile-menu-close-btn"><button>Close</button></li>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Contact</li>
-    </ul>
     <nav>
-      <ul>
+      <ul class="nav-bar">
         <li>
           <a href="" class="nav-bar-link">
             <div class="icon-container">
@@ -42,7 +36,9 @@
           <li>
             <a href="/about-us/about-us.html" class="nav-bar-link">About Us</a>
           </li>
-          <li><a href="" class="nav-bar-link">Contact</a></li>
+          <li>
+            <a href="contact/contact.html" class="nav-bar-link">Contact</a>
+          </li>
           <li>
             <button id="menu-icon-button" class="menu-icon-button">
               <img
@@ -57,6 +53,16 @@
         </div>
       </ul>
     </nav>
+    <ul id="mobile-menu" class="mobile-menu">
+      <li class="close-btn-container">
+        <button id="mobile-menu-close-btn" class="mobile-menu-close-btn">
+          X
+        </button>
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us/about-us.html">About Us</a></li>
+      <li><a href="contact/contact.html">Contact</a></li>
+    </ul>
     <main>
       <div class="container">
         <div class="hero-image-container">

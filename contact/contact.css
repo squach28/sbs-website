@@ -9,7 +9,6 @@ body {
   background: rgba(188, 219, 167, 0.2);
   backdrop-filter: blur(2.9px);
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
 }
 
 h4 {
@@ -29,6 +28,8 @@ h5 {
 .icon-text {
   font-size: 0.75rem;
 }
+
+/* Navbar */
 
 nav > ul {
   display: flex;
@@ -115,58 +116,6 @@ a:hover {
   margin-left: auto;
 }
 
-.container {
-  position: relative;
-  font-size: 1rem;
-  overflow-x: hidden;
-}
-
-.hero-image-container {
-  position: relative;
-}
-
-.hero-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.hero-text-container {
-  width: 100%;
-  position: absolute;
-  top: 5%;
-  color: white;
-  opacity: 0.8;
-  user-select: none;
-  text-align: center;
-}
-
-.hero-text-primary {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.hero-text-secondary {
-  font-size: 1rem;
-  margin-top: 0.25em;
-  display: none;
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 0.5rem;
-  margin: 1rem 0;
-  line-height: 1.75rem;
-  padding: 1rem;
-}
-
-.intro-header {
-  font-size: 1.5rem;
-}
 /* Footer */
 
 .footer-container {
@@ -187,13 +136,13 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1rem;
 }
 
-.practice-details-container {
+.footer-details-container {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .socials-container {
@@ -220,30 +169,9 @@ a:hover {
     display: none;
   }
 
-  .hero-image {
-    width: 100%;
-    height: 400px;
-  }
-
-  .hero-text-container {
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-
-  .hero-text-primary {
-    font-size: 2rem;
-  }
-
-  .hero-text-secondary {
-    display: block;
-    font-size: 1.5rem;
-  }
-
   /* Footer */
 
   .footer-container {
-    position: fixed;
     flex-direction: row;
     justify-content: center;
     padding: 0.5rem;
