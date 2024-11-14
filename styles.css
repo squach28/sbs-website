@@ -28,6 +28,7 @@ nav > ul {
   gap: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .right-nav > li > a.nav-bar-link {
