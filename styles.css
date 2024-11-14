@@ -12,13 +12,24 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-text {
+  font-size: 0.75rem;
+}
+
 nav > ul {
   display: flex;
+  align-items: center;
   background: rgb(50, 108, 95);
   list-style: none;
   gap: 2rem;
-  font-size: 1.5rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .right-nav > li > a.nav-bar-link {
@@ -31,23 +42,25 @@ nav > ul {
   text-decoration: none;
 }
 
+.menu-icon-button {
+  background: transparent;
+  border: none;
+}
+
 a:hover {
   color: grey;
 }
 
-button {
-  border: 0;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  font-size: 1.25rem;
+.mobile-menu {
+  position: absolute;
 }
-
 .right-nav {
   display: flex;
   margin-left: auto;
 }
 
 .container {
+  position: relative;
   font-size: 1rem;
   padding: 1rem;
 }
