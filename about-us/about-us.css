@@ -9,6 +9,7 @@ body {
   background: rgba(188, 219, 167, 0.2);
   backdrop-filter: blur(2.9px);
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 h4 {
@@ -241,5 +242,17 @@ section {
 
   .socials-list {
     flex: 1;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .board-members-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .board-members-grid {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
