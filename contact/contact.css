@@ -117,6 +117,49 @@ a:hover {
   margin-left: auto;
 }
 
+.header {
+  padding: 1rem;
+}
+
+.section {
+  padding: 1rem;
+}
+
+.interest-form-link {
+  display: block;
+  padding: 1rem;
+  background: #336c5f;
+  color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.interest-form-link:hover {
+  background: #18322c;
+  color: white;
+}
+
+.email-link {
+  display: block;
+  background: #336c5f;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.email-link:hover {
+  background: #18322c;
+  color: white;
+}
+
 /* Footer */
 
 .footer-container {
