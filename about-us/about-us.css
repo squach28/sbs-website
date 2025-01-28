@@ -122,11 +122,11 @@ a:hover {
 }
 
 .header {
-  padding: 0.5rem 1rem;
+  padding: 1rem 0;
 }
 
 section {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .section {
@@ -212,6 +212,11 @@ section {
 }
 
 @media all and (min-width: 640px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
   .right-nav {
     gap: 1rem;
   }
@@ -254,12 +259,21 @@ section {
 }
 
 @media all and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+
   .board-members-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media all and (min-width: 1280px) {
+  .container {
+    margin-top: 1em;
+  }
   .board-members-grid {
     grid-template-columns: repeat(5, 1fr);
   }

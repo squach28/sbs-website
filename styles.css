@@ -173,6 +173,13 @@ a:hover {
   position: relative;
   justify-content: space-around;
   gap: 1rem;
+  overflow: hidden;
+}
+
+.next-image {
+  position: absolute;
+  left: 100%;
+  top: 0;
 }
 
 .left-arrow-icon {
@@ -250,6 +257,10 @@ a:hover {
 }
 
 @media all and (min-width: 640px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
   .right-nav {
     gap: 1rem;
   }
@@ -279,6 +290,11 @@ a:hover {
   .hero-text-secondary {
     display: block;
     font-size: 1.5rem;
+  }
+
+  .image-section {
+    width: 75%;
+    margin: 0 auto;
   }
 
   /* Footer */
