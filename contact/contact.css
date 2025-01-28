@@ -213,6 +213,14 @@ a:hover {
     display: none;
   }
 
+  .interest-form-link {
+    max-width: 300px;
+  }
+
+  .email-link {
+    max-width: 300px;
+  }
+
   /* Footer */
 
   .footer-container {
@@ -236,5 +244,19 @@ a:hover {
 
   .socials-list {
     flex: 1;
+  }
+}
+
+@media all and (min-width: 680px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
   }
 }
