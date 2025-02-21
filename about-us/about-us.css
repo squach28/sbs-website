@@ -121,6 +121,10 @@ a:hover {
   object-fit: fill;
 }
 
+.container {
+  padding: 0 3em;
+}
+
 .header {
   padding: 1rem 0;
 }
@@ -212,8 +216,7 @@ section {
 
 @media all and (min-width: 640px) {
   .container {
-    max-width: 1000px;
-    margin: 0 auto;
+    padding: 0 5em;
   }
 
   .right-nav {
@@ -261,7 +264,12 @@ section {
   .container {
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 1em;
+  }
+
+  .hero-image {
+    display: block;
+    max-width: 1000px;
+    margin: 2em auto 0;
   }
 
   .board-members-grid {

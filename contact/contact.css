@@ -20,6 +20,14 @@ h5 {
   font-size: 1.25rem;
 }
 
+p {
+  margin: 0.5em 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .icon-container {
   display: flex;
   flex-direction: column;
@@ -134,7 +142,7 @@ a:hover {
   margin: 0 auto;
   text-decoration: none;
   font-size: 1.1rem;
-  margin-top: 0.5rem;
+  margin: 1em auto;
   text-align: center;
 }
 
@@ -149,10 +157,9 @@ a:hover {
   color: white;
   border-radius: 10px;
   padding: 1rem;
-  margin: 0 auto;
+  margin: 1em auto;
   text-align: center;
   text-decoration: none;
-  margin-top: 0.5rem;
 }
 
 .email-link:hover {
